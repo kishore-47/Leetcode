@@ -1,1 +1,12 @@
-hello
+class Solution {
+    public boolean isPalindrome(int x) {
+        int original = x;
+        int result = 0;
+        while(x>0){
+            int reminder =x%10;
+            x=x/10;
+            result = result*10+reminder; 
+        }
+        return original == result;
+    }
+}
